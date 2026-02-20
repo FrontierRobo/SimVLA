@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Small, app-wide defaults (keep the rest in components/pages). */
+html,
+body {
+  height: 100%;
+}
