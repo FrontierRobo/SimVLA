@@ -1,6 +1,6 @@
 export const SIMVLA = {
   title: "SimVLA: A Simple VLA Baseline for Robotic Manipulation",
-  authors: "Yuankai Luo, Woping Chen, Tong Liang, Baiqiao Wang, Zhenguo Li*",
+  authors: "Yuankai Luo, Woping Chen, Tong Liang, Baiqiao Wang, Zhenguo Li",
   tagline:
     "A streamlined Vision-Language-Action (VLA) baseline for robotic manipulation, designed for transparency and reproducibility.",
   abstract:
@@ -218,11 +218,14 @@ export const SIMVLA = {
         "A transparent reference point that makes it easier to attribute gains to future architectural innovations.",
     },
   ],
-  bibtex: `@article{simvla2026,
-  title   = {SimVLA: A Simple VLA Baseline for Robotic Manipulation},
-  author  = {Yuankai Luo and Woping Chen and Tong Liang and Baiqiao Wang and Zhenguo Li},
-  year    = {2026},
-  url     = {https://frontierrobo.github.io/SimVLA},
+  bibtex: `@misc{luo2026simvlasimplevlabaseline,
+      title={SimVLA: A Simple VLA Baseline for Robotic Manipulation}, 
+      author={Yuankai Luo and Woping Chen and Tong Liang and Baiqiao Wang and Zhenguo Li},
+      year={2026},
+      eprint={2602.18224},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2602.18224}, 
 }`,
 } as const;
 
