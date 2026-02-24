@@ -76,7 +76,7 @@ function Button({
 }: {
   href: string;
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "blue";
+  variant?: "primary" | "secondary" | "blue" | "yellow";
 }) {
   const base =
     "inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold shadow-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-900/20";
@@ -85,6 +85,8 @@ function Button({
     styles = "bg-slate-900 text-white hover:bg-slate-800";
   } else if (variant === "blue") {
     styles = "bg-[#3b82f6] text-white hover:bg-[#2563eb]";
+  } else if (variant === "yellow") {
+    styles = "bg-[#FFD21E] text-slate-900 hover:bg-[#f0c400]";
   } else {
     styles = "border border-slate-300 bg-white text-slate-900 hover:bg-slate-50";
   }
@@ -270,11 +272,11 @@ export default function SimvlaPage() {
                   </svg>
                   Code
                 </Button>
-                <Button href="https://huggingface.co/collections/YuankaiLuo/simvla" variant="secondary">
+                <Button href="https://huggingface.co/collections/YuankaiLuo/simvla" variant="yellow">
                   <svg
                     className="mr-2 h-4 w-4"
                     viewBox="0 0 95 88"
-                    fill="currentColor"
+                    fill="#FFD21E"
                   >
                     <path d="M47.502 2C22.699 2 2.695 22.004 2.695 46.807c0 24.802 20.004 44.807 44.807 44.807 24.802 0 44.807-20.005 44.807-44.807C92.309 22.004 72.304 2 47.502 2zm-13.27 24.804c3.245 0 5.875 2.63 5.875 5.875s-2.63 5.875-5.875 5.875-5.875-2.63-5.875-5.875 2.63-5.875 5.875-5.875zm26.54 0c3.245 0 5.875 2.63 5.875 5.875s-2.63 5.875-5.875 5.875-5.875-2.63-5.875-5.875 2.63-5.875 5.875-5.875zM47.502 57.79c-9.47 0-17.584-5.732-21.308-14.003h42.616c-3.724 8.27-11.838 14.003-21.308 14.003z"/>
                   </svg>
