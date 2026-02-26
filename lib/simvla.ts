@@ -218,14 +218,11 @@ export const SIMVLA = {
         "A transparent reference point that makes it easier to attribute gains to future architectural innovations.",
     },
   ],
-  bibtex: `@misc{luo2026simvlasimplevlabaseline,
-      title={SimVLA: A Simple VLA Baseline for Robotic Manipulation}, 
-      author={Yuankai Luo and Woping Chen and Tong Liang and Baiqiao Wang and Zhenguo Li},
-      year={2026},
-      eprint={2602.18224},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2602.18224}, 
+  bibtex: `@article{luo2026simvla,
+  title={SimVLA: A Simple VLA Baseline for Robotic Manipulation},
+  author={Luo, Yuankai and Chen, Woping and Liang, Tong and Wang, Baiqiao and Li, Zhenguo},
+  journal={arXiv preprint arXiv:2602.18224},
+  year={2026}
 }`,
 } as const;
 
