@@ -202,14 +202,46 @@ export default function SimvlaPage() {
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#faf8f2]/80 backdrop-blur">
         <Container className="py-3">
           <div className="flex items-center justify-between gap-4">
-            <Link
-              href="/home"
-              className="text-3xl font-semibold tracking-tight text-slate-900"
+            <a
+              href="#"
+              className="text-3xl font-semibold tracking-tight text-slate-900 hover:text-slate-700"
             >
               Frontier Robotics
-            </Link>
+            </a>
 
             <nav className="hidden items-center gap-6 text-lg text-slate-600 md:flex">
+              <div className="relative group">
+                <button className="flex items-center gap-1 font-semibold hover:text-slate-900 focus:outline-none">
+                  Research
+                  <svg
+                    className="h-4 w-4 transition-transform group-hover:rotate-180"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div className="absolute top-full left-0 mt-2 w-full py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <a
+                    href="https://frontierrobo.github.io/SimVLA/"
+                    className="block px-1 py-1 text-sm font-medium text-slate-900"
+                  >
+                    SimVLA
+                  </a>
+                  <a
+                    href="https://frontierrobo.github.io/CORAL/"
+                    className="block px-1 py-1 text-sm text-slate-600 hover:text-slate-900 transition-colors"
+                  >
+                    CORAL
+                  </a>
+                </div>
+              </div>
               <a className="hover:text-slate-900" href="#overview">
                 Overview
               </a>

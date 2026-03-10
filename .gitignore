@@ -47,3 +47,4 @@ next-env.d.ts
 # paper source (LaTeX, under blind review — do not publish)
 /paper/
 /icml2026.pdf
+public/paper/Table4-bak.png
